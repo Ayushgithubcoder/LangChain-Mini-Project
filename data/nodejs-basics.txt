@@ -1,0 +1,15 @@
+Node.js Basics
+
+Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows you to run JavaScript on the server side.
+
+Key Features:
+- Asynchronous and event-driven
+- Single-threaded with event loop
+- NPM (Node Package Manager) for package management
+- Built-in modules for file system, HTTP, and more
+
+Getting Started:
+To run a Node.js file, use: node filename.js
+
+Common use cases include building web servers, APIs, and command-line tools.
+

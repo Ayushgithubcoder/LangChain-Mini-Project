@@ -1,0 +1,20 @@
+Util Module in Node.js
+
+The util module provides utility functions for various purposes.
+
+Promisify (convert callback to promise):
+const util = require('util');
+const fs = require('fs');
+const readFile = util.promisify(fs.readFile);
+
+Inheritance:
+util.inherits(Child, Parent);
+
+Inspect objects:
+console.log(util.inspect(obj, { depth: null }));
+
+Format strings:
+util.format('%s:%s', 'foo', 'bar'); // 'foo:bar'
+
+The util module helps with common programming tasks and debugging.
+

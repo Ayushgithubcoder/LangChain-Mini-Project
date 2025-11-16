@@ -4,18 +4,21 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "index": "node indexing.js",
+    "chat": "node chat.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "RAG (Retrieval-Augmented Generation) pipeline using LangChain for question-answering on custom knowledge base",
   "dependencies": {
     "@langchain/community": "^1.0.3",
     "@langchain/core": "^1.0.5",
     "@langchain/openai": "^1.1.1",
     "@langchain/qdrant": "^1.0.0",
     "dotenv": "^17.2.3",
+    "langchain": "^0.1.37",
     "pdf-parse": "^1.1.4"
   }
 }

@@ -1,0 +1,15 @@
+Node.js Modules
+
+Node.js uses a module system to organize code. There are three types of modules:
+
+1. Core Modules: Built-in modules like fs, http, path
+   Example: const fs = require('fs');
+
+2. Local Modules: Files you create in your project
+   Example: const myModule = require('./myModule');
+
+3. Third-party Modules: Installed via npm
+   Example: const express = require('express');
+
+Module.exports is used to export functions, objects, or values from a module.
+

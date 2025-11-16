@@ -1,0 +1,22 @@
+Cluster Module in Node.js
+
+The cluster module allows you to create child processes that share server ports, enabling better utilization of multi-core systems.
+
+Example:
+const cluster = require('cluster');
+const http = require('http');
+
+if (cluster.isMaster) {
+  // Fork workers
+  for (let i = 0; i < 4; i++) {
+    cluster.fork();
+  }
+} else {
+  // Workers can share TCP connection
+  http.createServer((req, res) => {
+    res.end('Hello from worker');
+  }).listen(3000);
+}
+
+This helps scale Node.js applications across CPU cores.
+

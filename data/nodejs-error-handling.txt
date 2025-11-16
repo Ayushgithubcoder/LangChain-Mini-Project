@@ -1,0 +1,28 @@
+Error Handling in Node.js
+
+Proper error handling is crucial in Node.js applications.
+
+Try-Catch for async/await:
+async function example() {
+  try {
+    const data = await someAsyncOperation();
+  } catch (error) {
+    console.error('Error:', error.message);
+  }
+}
+
+Error-first callbacks:
+fs.readFile('file.txt', (err, data) => {
+  if (err) {
+    console.error('Error reading file:', err);
+    return;
+  }
+  // Process data
+});
+
+Process uncaught exceptions:
+process.on('uncaughtException', (err) => {
+  console.error('Uncaught Exception:', err);
+  process.exit(1);
+});
+

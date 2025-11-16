@@ -1,0 +1,14 @@
+URL Module in Node.js
+
+The url module provides utilities for URL resolution and parsing.
+
+Parsing URLs:
+const url = require('url');
+const myUrl = new URL('https://example.com:8080/path?query=value#hash');
+
+console.log(myUrl.hostname); // 'example.com'
+console.log(myUrl.pathname); // '/path'
+console.log(myUrl.searchParams.get('query')); // 'value'
+
+You can also use url.parse() for legacy URL parsing. The URL class is the modern approach and follows the WHATWG URL standard.
+

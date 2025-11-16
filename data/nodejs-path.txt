@@ -1,0 +1,18 @@
+Path Module in Node.js
+
+The path module provides utilities for working with file and directory paths.
+
+Common methods:
+- path.join(): Join path segments
+- path.resolve(): Resolve absolute path
+- path.dirname(): Get directory name
+- path.basename(): Get filename
+- path.extname(): Get file extension
+
+Example:
+const path = require('path');
+const filePath = path.join(__dirname, 'data', 'file.txt');
+console.log(path.basename(filePath)); // 'file.txt'
+
+The path module handles cross-platform path differences automatically.
+

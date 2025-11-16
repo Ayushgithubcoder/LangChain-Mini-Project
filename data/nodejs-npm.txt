@@ -1,0 +1,15 @@
+NPM - Node Package Manager
+
+NPM is the package manager for Node.js. It comes bundled with Node.js installation.
+
+Common commands:
+- npm init: Initialize a new package.json
+- npm install <package>: Install a package
+- npm install -g <package>: Install globally
+- npm install --save-dev <package>: Install as dev dependency
+- npm list: Show installed packages
+- npm update: Update packages
+- npm uninstall <package>: Remove a package
+
+package.json file contains project metadata and dependencies.
+

@@ -1,0 +1,21 @@
+Express.js Framework
+
+Express is a minimal and flexible web application framework for Node.js.
+
+Installation:
+npm install express
+
+Basic Example:
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Hello World');
+});
+
+app.listen(3000, () => {
+  console.log('Server running on port 3000');
+});
+
+Express provides routing, middleware, and template engine support.
+

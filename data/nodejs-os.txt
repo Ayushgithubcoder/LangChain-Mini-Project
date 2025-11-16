@@ -1,0 +1,21 @@
+OS Module in Node.js
+
+The os module provides operating system-related utility methods.
+
+Common methods:
+- os.platform(): Operating system platform
+- os.arch(): CPU architecture
+- os.cpus(): CPU information
+- os.totalmem(): Total system memory
+- os.freemem(): Free system memory
+- os.hostname(): Hostname
+- os.homedir(): Home directory
+
+Example:
+const os = require('os');
+console.log('Platform:', os.platform());
+console.log('Total Memory:', os.totalmem());
+console.log('CPU Count:', os.cpus().length);
+
+Useful for system information and resource monitoring.
+

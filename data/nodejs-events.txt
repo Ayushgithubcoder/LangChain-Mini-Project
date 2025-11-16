@@ -1,0 +1,17 @@
+Event Emitter in Node.js
+
+Node.js has a built-in events module that allows objects to emit and listen to events.
+
+const EventEmitter = require('events');
+const myEmitter = new EventEmitter();
+
+// Listen for event
+myEmitter.on('event', (data) => {
+  console.log('Event received:', data);
+});
+
+// Emit event
+myEmitter.emit('event', 'Hello World');
+
+Many Node.js objects inherit from EventEmitter, including HTTP servers and file streams. This enables event-driven programming.
+

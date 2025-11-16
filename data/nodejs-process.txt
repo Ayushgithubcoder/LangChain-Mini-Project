@@ -1,0 +1,17 @@
+Process Object in Node.js
+
+The process object provides information about and control over the current Node.js process.
+
+Common properties:
+- process.argv: Command line arguments
+- process.env: Environment variables
+- process.cwd(): Current working directory
+- process.exit(): Exit the process
+- process.version: Node.js version
+
+Example:
+console.log('Node version:', process.version);
+console.log('Current directory:', process.cwd());
+
+You can listen to process events like 'exit', 'uncaughtException', and 'SIGINT'.
+

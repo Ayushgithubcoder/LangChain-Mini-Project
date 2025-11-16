@@ -1,0 +1,24 @@
+Timers in Node.js
+
+Node.js provides several timer functions for scheduling code execution.
+
+setTimeout: Execute once after delay
+setTimeout(() => {
+  console.log('Delayed execution');
+}, 1000);
+
+setInterval: Execute repeatedly
+const interval = setInterval(() => {
+  console.log('Repeating');
+}, 1000);
+
+clearTimeout and clearInterval: Cancel timers
+clearInterval(interval);
+
+setImmediate: Execute in next event loop iteration
+setImmediate(() => {
+  console.log('Immediate execution');
+});
+
+These functions are part of the global scope in Node.js.
+

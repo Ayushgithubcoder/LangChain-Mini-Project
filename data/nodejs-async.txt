@@ -1,0 +1,24 @@
+Asynchronous Programming in Node.js
+
+Node.js is designed for asynchronous operations. Common patterns include:
+
+Callbacks:
+fs.readFile('file.txt', (err, data) => {
+  // Handle result
+});
+
+Promises:
+fs.promises.readFile('file.txt')
+  .then(data => console.log(data))
+  .catch(err => console.error(err));
+
+Async/Await:
+async function readFile() {
+  try {
+    const data = await fs.promises.readFile('file.txt');
+    console.log(data);
+  } catch (err) {
+    console.error(err);
+  }
+}
+

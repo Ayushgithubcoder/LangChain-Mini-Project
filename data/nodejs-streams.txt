@@ -1,0 +1,19 @@
+Streams in Node.js
+
+Streams are objects that let you read data from a source or write data to a destination continuously.
+
+Types of streams:
+- Readable: Read data (fs.createReadStream)
+- Writable: Write data (fs.createWriteStream)
+- Duplex: Both read and write
+- Transform: Modify data as it's written and read
+
+Example:
+const fs = require('fs');
+const readStream = fs.createReadStream('input.txt');
+const writeStream = fs.createWriteStream('output.txt');
+
+readStream.pipe(writeStream);
+
+Streams are memory efficient and great for handling large files.
+

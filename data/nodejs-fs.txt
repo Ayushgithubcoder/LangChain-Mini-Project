@@ -1,0 +1,19 @@
+File System in Node.js
+
+The fs module provides an API for interacting with the file system.
+
+Reading files:
+const fs = require('fs');
+fs.readFile('file.txt', 'utf8', (err, data) => {
+  if (err) throw err;
+  console.log(data);
+});
+
+Writing files:
+fs.writeFile('file.txt', 'Hello World', (err) => {
+  if (err) throw err;
+  console.log('File written');
+});
+
+The fs module also supports promises with fs.promises for async/await syntax.
+

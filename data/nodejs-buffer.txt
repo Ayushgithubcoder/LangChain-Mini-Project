@@ -1,0 +1,17 @@
+Buffers in Node.js
+
+Buffers are used to handle binary data in Node.js. They represent fixed-size chunks of memory.
+
+Creating buffers:
+const buf1 = Buffer.from('Hello');
+const buf2 = Buffer.alloc(10);
+const buf3 = Buffer.allocUnsafe(10);
+
+Buffer methods:
+- buf.toString(): Convert to string
+- buf.length: Get buffer size
+- buf.copy(): Copy buffer
+- Buffer.concat(): Concatenate buffers
+
+Buffers are essential when working with file systems, network protocols, and binary data formats.
+

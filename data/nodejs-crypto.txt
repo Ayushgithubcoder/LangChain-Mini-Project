@@ -1,0 +1,17 @@
+Crypto Module in Node.js
+
+The crypto module provides cryptographic functionality including hashing, encryption, and decryption.
+
+Hashing:
+const crypto = require('crypto');
+const hash = crypto.createHash('sha256');
+hash.update('Hello World');
+console.log(hash.digest('hex'));
+
+Encryption:
+const cipher = crypto.createCipher('aes192', 'password');
+let encrypted = cipher.update('Hello', 'utf8', 'hex');
+encrypted += cipher.final('hex');
+
+The crypto module is essential for secure applications, password hashing, and data encryption.
+
